@@ -4,11 +4,11 @@ from flask import Flask,render_template,url_for,request
 from spacy_summarization import text_summarizer
 #from gensim.summarization import summarize
 from nltk_summarization import nltk_summarizer
-#import nltk
-#nltk.download('wordnet')
-#nltk.download('punkt')
-#nltk.download('all-corpora')
-#nltk.download('stopwords')
+import nltk
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('all-corpora')
+nltk.download('stopwords')
 import time
 import spacy
 nlp = spacy.load('en_core_web_sm')
